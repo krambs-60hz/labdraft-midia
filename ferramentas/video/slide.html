@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<style>
+:root{--bg:#0b1120;--panel:#131b2d;--line:#2a3652;--fg:#ebe5d3;--fg2:#cfc8b4;--muted:#8d97ad;--gold:#c9a75c;--gold2:#e6cf8f;--bad:#d9605a;--good:#5fbf86}
+*{box-sizing:border-box}
+body{margin:0;width:432px;height:768px;background:var(--bg);color:var(--fg);font-family:"Inter",system-ui,sans-serif;overflow:hidden}
+.wrap{position:absolute;inset:0;padding:78px 50px 150px 30px;display:flex;flex-direction:column}
+.brand{position:absolute;top:72px;left:30px;display:flex;align-items:center;gap:8px;font-family:Georgia,"Times New Roman",serif;font-weight:700;font-size:15px;color:var(--gold2)}
+.brand small{font-family:"Inter",sans-serif;font-weight:500;color:var(--muted);font-size:11px;margin-left:4px}
+.body{flex:1;display:flex;flex-direction:column;justify-content:center;gap:16px;padding-top:30px}
+.eb{font-weight:700;font-size:11.5px;letter-spacing:2.4px;text-transform:uppercase;color:var(--gold)}
+h1{font-family:Georgia,"Times New Roman",serif;font-weight:700;font-size:38px;line-height:1.08;margin:0;color:var(--gold2)}
+h1.w{color:var(--fg)}
+.sub{font-size:17px;line-height:1.45;color:var(--fg2);margin:0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.cbox{background:var(--panel);border:1.5px solid var(--line);border-radius:12px;padding:12px 12px 6px}
+.cbox h3{font-family:Georgia,serif;font-size:22px;margin:0 0 6px;color:var(--fg)}
+.row{padding:6px 0;border-bottom:1px solid var(--line)}.row:last-child{border:0}
+.row span{display:block;font-size:9.5px;font-weight:700;letter-spacing:1.6px;color:var(--muted)}
+.row b{font-size:16.5px}
+.foot{font-weight:700;font-size:16px;color:var(--gold2)}
+.res{display:flex;flex-direction:column;align-items:center;gap:6px;padding:18px 8px;background:var(--panel);border:1.5px solid var(--line);border-radius:12px;text-align:center}
+.res.win{border:2px solid var(--gold)}
+.res .l{font-size:10.5px;font-weight:700;letter-spacing:1.6px;color:var(--muted);text-transform:uppercase}
+.res .g{font-family:Georgia,serif;font-weight:700;font-size:78px;line-height:1;color:var(--fg2)}
+.res.win .g{color:var(--gold2)}
+.res .v{font-weight:700;font-size:17px}
+.pill{font-weight:700;font-size:13px;padding:5px 12px;border-radius:99px;border:1.5px solid #3a4868;color:var(--fg2)}
+.res.win .pill{background:var(--gold);border-color:var(--gold);color:#1a1405}
+.note{font-size:14px;color:var(--muted)}
+.items{display:flex;flex-direction:column;gap:9px}
+.it{background:var(--panel);border:1.5px solid var(--line);border-radius:12px;padding:11px 13px;display:flex;gap:12px;align-items:flex-start}
+.it .k{font-family:Georgia,serif;font-weight:700;font-size:22px;color:var(--gold);width:26px;flex-shrink:0;line-height:1.1}
+.it b{display:block;font-size:17px;margin-bottom:2px}
+.it p{margin:0;font-size:13.5px;line-height:1.38;color:var(--fg2)}
+.big{background:var(--panel);border:2px solid var(--gold);border-radius:14px;padding:22px 20px}
+.big p{font-size:21px;line-height:1.4;margin:0;color:var(--fg)}
+.center{align-items:center;text-align:center}
+.btn{background:var(--gold);color:#1a1405;font-weight:700;font-size:19px;padding:12px 26px;border-radius:10px;display:inline-block}
+.url{color:var(--gold2);font-size:15px}
+.tiny{font-size:11px;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}.chip{font-size:12.5px;padding:4px 10px;border-radius:99px;border:1px solid var(--line);background:var(--panel)}
+.shot{max-height:430px;border-radius:16px;overflow:hidden;border:2px solid #2a3652;box-shadow:0 18px 40px rgba(0,0,0,.45)}.shot img{display:block;width:100%}
+.note2{font-size:11px;color:var(--muted);text-align:center}
+.ch{background:var(--panel);border:1.5px solid var(--line);border-radius:12px;padding:10px 13px;display:flex;gap:12px;align-items:center}
+.ch .a{font-weight:700;font-size:12px;letter-spacing:1px;padding:4px 8px;border-radius:6px;flex-shrink:0;width:66px;text-align:center}
+.ch .a.up{background:rgba(95,191,134,.15);color:var(--good);border:1px solid var(--good)}
+.ch .a.down{background:rgba(217,96,90,.15);color:var(--bad);border:1px solid var(--bad)}
+.ch .a.adj{color:var(--gold2);border:1px solid var(--gold)}
+.ch b{display:block;font-size:17px}.ch p{margin:2px 0 0;font-size:13px;line-height:1.35;color:var(--fg2)}
+.rs{display:grid;grid-template-columns:1fr 64px 1fr;align-items:center;gap:8px;background:var(--panel);border:1.5px solid var(--line);border-radius:12px;padding:10px 12px;font-size:16px;color:var(--fg2)}
+.rs .x{text-align:center;font-family:Georgia,serif;font-weight:700;font-size:20px;color:var(--fg)}
+.rs .ta{text-align:right}.rs .w{color:var(--gold2);font-weight:700}.rs.br{border-color:var(--gold)}
+.gr{display:flex;align-items:center;gap:20px}
+.gr .g{font-family:Georgia,serif;font-weight:700;font-size:120px;line-height:1;color:var(--gold2)}
+.gr .v{font-size:26px;font-weight:700}.gr .v small{color:var(--muted);font-size:16px}
+</style></head>
+<body><div class="brand"><svg width="20" height="20" viewBox="0 0 26 26"><rect x="5" y="5" width="16" height="16" rx="1.6" transform="rotate(45 13 13)" fill="none" stroke="#c9a75c" stroke-width="1.8"/><rect x="9.5" y="9.5" width="7" height="7" rx="0.8" transform="rotate(45 13 13)" fill="#e6cf8f"/></svg>Laboratório de Draft<small>· projeto de fã</small></div>
+<div class="wrap"><div class="body" id="b"></div></div>
+<script>
+const R=["TOP","JUNGLE","MID","ATIRADOR","SUPORTE"];
+const e=s=>String(s).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const logo='<svg width="96" height="96" viewBox="0 0 26 26"><rect x="5" y="5" width="16" height="16" rx="1.6" transform="rotate(45 13 13)" fill="none" stroke="#c9a75c" stroke-width="1.7"/><rect x="9.5" y="9.5" width="7" height="7" rx="0.8" transform="rotate(45 13 13)" fill="#e6cf8f"/></svg>';
+function box(title,champs){return `<div class="cbox"><h3>${e(title)}</h3>${champs.map((c,i)=>`<div class="row"><span>${R[i]}</span><b>${e(c)}</b></div>`).join("")}</div>`}
+window.show=function(s){const b=document.getElementById("b");b.className="body";let h="";
+ if(s.eyebrow)h+=`<div class="eb">${e(s.eyebrow)}</div>`;
+ switch(s.t){
+ case"title":h+=`<h1>${e(s.title)}</h1>${s.sub?`<p class="sub">${e(s.sub)}</p>`:""}`;break;
+ case"comps":h+=`<h1>${e(s.title)}</h1><div class="grid2">${s.comps.map(c=>box(c.label,c.champs)).join("")}</div><div class="foot">${e(s.foot)}</div>`;break;
+ case"comps1":h+=`<h1>${e(s.title)}</h1><div class="cbox" style="padding:14px 16px 8px">${s.comp.map((c,i)=>`<div class="row"><span>${R[i]}</span><b style="font-size:20px">${e(c)}</b></div>`).join("")}</div><div class="foot">${e(s.foot)}</div>`;break;
+ case"answer":h+=`<h1>${e(s.title)}</h1><p class="sub">${e(s.sub)}</p><div class="grid2">${s.res.map(r=>`<div class="res ${r.win?"win":""}"><div class="l">${e(r.label)}</div><div class="g">${e(r.g)}</div><div class="v">${r.v} / 100</div><div class="pill">${r.win?"Venceu":"Perdeu"}</div></div>`).join("")}</div><div class="note">Nota do Laboratório · ${e(s.note)}</div>`;break;
+ case"counters":h+=`<div class="items">${s.items.map((x,i)=>`<div class="it"><div class="k">${i+1}</div><div><b>${e(x.n)}</b><p>${e(x.why)}</p></div></div>`).join("")}</div><div class="note">Pela lógica de mecânicas do Laboratório.</div>`;break;
+ case"list":h+=`<div class="items">${s.items.map((x,i)=>`<div class="it"><div class="k">${i+1}</div><div><b>${e(x[0])}</b><p>${e(x[1])}</p></div></div>`).join("")}</div>`;break;
+ case"exercise":h+=`<div class="big"><p>${e(s.title)}</p></div><div class="foot">Testa na próxima partida.</div>`;break;
+ case"term":h+=`<h1 style="font-size:44px">${e(s.title)}</h1><div class="big"><p>${e(s.sub)}</p></div>`;break;
+ case"grade":h+=`<div class="gr"><div class="g">${e(s.g)}</div><div class="v">${s.v}<small> / 100</small></div></div>${s.types&&s.types.length?`<div class="chips">${s.types.map(t=>`<span class="chip">${e(t)}</span>`).join("")}</div>`:""}<div class="items">${s.notes.map(n=>`<div class="it"><div><p style="font-size:15px;color:var(--fg)">${e(n)}</p></div></div>`).join("")}</div>`;break;
+ case"shot":h+=`<h1 style="font-size:32px">${e(s.title)}</h1><div class="shot"><img src="${s.img}"></div>${s.sub?`<p class="sub" style="font-size:16px">${e(s.sub)}</p>`:""}${s.demo?`<div class="note2">Tela de exemplo</div>`:""}`;break;
+ case"changes":h+=`${s.title?`<h1 style="font-size:30px">${e(s.title)}</h1>`:""}<div class="items">${s.items.map(x=>`<div class="ch"><div class="a ${x.dir}">${({up:"FORTE",down:"FRACO",adj:"AJUSTE"})[x.dir]||"AJUSTE"}</div><div><b>${e(x.n)}</b>${x.txt?`<p>${e(x.txt)}</p>`:""}</div></div>`).join("")}</div>`;break;
+ case"results":h+=`${s.title?`<h1 style="font-size:30px">${e(s.title)}</h1>`:""}<div class="items">${s.items.map(r=>`<div class="rs${r.br?" br":""}"><span class="ta${r.sa>r.sb?" w":""}">${e(r.a)}</span><span class="x">${r.sa} × ${r.sb}</span><span class="${r.sb>r.sa?"w":""}">${e(r.b)}</span></div>`).join("")}</div>${s.foot?`<div class="foot">${e(s.foot)}</div>`:""}`;break;
+ case"cta":b.className="body center";h=`${logo}<h1>${e(s.title)}</h1><p class="sub">${e(s.sub)}</p><div class="btn">${e(s.btn||"Link na bio")}</div><div class="url">labdraft.com.br</div><div class="tiny">Não é endossado pela Riot Games.</div>`;break;
+ }
+ b.innerHTML=h;
+ // encolhe o título se o conteúdo não couber
+ const h1=b.querySelector("h1");let fs=h1?parseFloat(getComputedStyle(h1).fontSize):0;
+ while(b.scrollHeight>b.clientHeight+2&&h1&&fs>22){fs-=2;h1.style.fontSize=fs+"px"}
+ return b.scrollHeight<=b.clientHeight+2;
+};
+</script></body></html>
