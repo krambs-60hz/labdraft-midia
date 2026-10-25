@@ -43,7 +43,9 @@ Campeões novos: a Riot anuncia poucas semanas antes do lançamento. A tarefa di
 
 A tarefa mensal anota aqui, por mês, o id do Metricool, a data e o assunto de cada post atemporal que agendou. A tarefa diária só reaproveita posts desta lista ou dos tipos atemporais antigos (que começam com "Mundial 2025, final", "MSI 2026, final", "CBLOL 2026, final", "Quem countera", "Montei uma comp", "... explicados em segundos" ou "... hábitos simples").
 
-(vazio)
+Janeiro de 2027 (passados de outubro de 2026 em 25/10/2026, para outubro não passar de 20):
+- 05/01/2027 18:00 · Mundial 2025, final, jogo 2: KT × T1 (comp A ou B)
+- 08/01/2027 18:00 · Draft do dia (novidade do site)
 
 ## Fontes das datas
 
