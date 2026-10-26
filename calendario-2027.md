@@ -47,6 +47,10 @@ Janeiro de 2027 (passados de outubro de 2026 em 25/10/2026, para outubro não pa
 - 05/01/2027 18:00 · Mundial 2025, final, jogo 2: KT × T1 (comp A ou B)
 - 08/01/2027 18:00 · Draft do dia (novidade do site)
 
+## Trocas da revisão semanal
+
+- 26/10/2026: post de 13/11/2026 18:00 (recurso do site, "Escolhe quem você vai enfrentar...", vídeo 25-v-counters) trocado por "Quem countera Jinx?" (videos-v2/13-c-jinx.mp4, já pronto e não agendado). Motivo: recurso do site ficou em ~98 views contra 291 do Quem countera. Novo id no Metricool: 406665115 (uuid -2531521199162765646). Total de novembro continua em 20.
+
 ## Fontes das datas
 
 - Mundial 2027 na Coreia do Sul, datas provisórias: Insider Gaming (KeSPA), https://insider-gaming.com/lol-worlds-2027-tentative-dates-shared-by-kespa-as-host-city-search-begins/
