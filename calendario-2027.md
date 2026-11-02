@@ -50,6 +50,7 @@ Janeiro de 2027 (passados de outubro de 2026 em 25/10/2026, para outubro não pa
 ## Trocas da revisão semanal
 
 - 26/10/2026: post de 13/11/2026 18:00 (recurso do site, "Escolhe quem você vai enfrentar...", vídeo 25-v-counters) trocado por "Quem countera Jinx?" (videos-v2/13-c-jinx.mp4, já pronto e não agendado). Motivo: recurso do site ficou em ~98 views contra 291 do Quem countera. Novo id no Metricool: 406665115 (uuid -2531521199162765646). Total de novembro continua em 20.
+- 02/11/2026: post de 22/11/2026 18:00 (recurso do site em forma de anúncio, páginas dos campeões, "Fui ver a Irelia") trocado por "Quem countera Zed?" (atemporal/2026-11/quem-countera-zed.mp4, vídeo novo). Motivo: pendência da revisão de 26/10; recurso do site ficou em ~98 views contra 291 do Quem countera. Novo id no Metricool: 414079766 (uuid 4540269676693835384). Dica e termo pendentes não foram trocados: sem dados novos por vídeo. Total de novembro continua em 20 (2 publicados, 18 pendentes).
 
 ## Fontes das datas
 
