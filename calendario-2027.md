@@ -30,7 +30,7 @@ Regra: a tarefa mensal deixa livres as vagas reservadas do mês (coluna "Vagas l
 | Set | 2 patches | Playoffs e final do CBLOL (estimativa); final do tier 2; vagas para o Mundial | 9 | Quem vai ao Mundial; prévia do Bolão |
 | Out | 2 patches | **Mundial 2027 na Coreia do Sul, 15/10 a 14/11** (datas provisórias divulgadas pela KeSPA) | 9 | Bolão do Mundial; times do Mundial |
 | Nov | 1 a 2 patches | Mundial: quartas e semis 2 a 9/11, final 14/11 (provisório) | 8 | Comp A ou B da final; retrospectiva |
-| Dez | 1 patch (em 2026: 9/12); pausa de fim de ano | Pré-temporada e mercado de transferências (contratações dos times do CBLOL) | 5 | Retrospectiva 2027; melhores comps do ano no site |
+| Dez | 1 patch (em 2026: 26.24 confirmado para 09/12/2026; em 2027, estimativa); pausa de fim de ano | Pré-temporada e mercado de transferências (contratações dos times do CBLOL) | 5 | Retrospectiva 2027; melhores comps do ano no site |
 
 Campeões novos: a Riot anuncia poucas semanas antes do lançamento. A tarefa diária confere as notícias oficiais e usa a vaga de "novidade oficial" do mês.
 
@@ -47,6 +47,8 @@ Janeiro de 2027 (passados de outubro de 2026 em 25/10/2026, para outubro não pa
 - 05/01/2027 18:00 · Mundial 2025, final, jogo 2: KT × T1 (comp A ou B)
 - 08/01/2027 18:00 · Draft do dia (novidade do site)
 
+Dezembro de 2026 (tarefa mensal de 20/11/2026): nenhum post novo. O mês já tem 20 posts agendados desde 16/10/2026 (01, 02, 04, 05, 07, 08, 10, 11, 13, 14, 16, 17, 19, 20, 22, 23, 25, 26, 28 e 29/12, às 18:00), então vagas = 20 − 20 − 5 = −5. Patch 26.24 em 09/12/2026 (quarta), dia sem post: o vídeo do patch e qualquer competitivo/novidade de dezembro precisam reaproveitar um atemporal desta lista (regra da tarefa diária). Competitivo de dezembro: nada confirmado (pré-temporada e mercado).
+
 ## Trocas da revisão semanal
 
 - 26/10/2026: post de 13/11/2026 18:00 (recurso do site, "Escolhe quem você vai enfrentar...", vídeo 25-v-counters) trocado por "Quem countera Jinx?" (videos-v2/13-c-jinx.mp4, já pronto e não agendado). Motivo: recurso do site ficou em ~98 views contra 291 do Quem countera. Novo id no Metricool: 406665115 (uuid -2531521199162765646). Total de novembro continua em 20.
@@ -60,3 +62,4 @@ Janeiro de 2027 (passados de outubro de 2026 em 25/10/2026, para outubro não pa
 
 - Mundial 2027 na Coreia do Sul, datas provisórias: Insider Gaming (KeSPA), https://insider-gaming.com/lol-worlds-2027-tentative-dates-shared-by-kespa-as-host-city-search-begins/
 - Ritmo de patches (24 por ano, 3 temporadas, a cada 2 semanas) com base em 2026: esports.gg, https://esports.gg/news/league-of-legends/2026-lol-patch-schedule/ e o calendário oficial de patches da Riot, https://support-leagueoflegends.riotgames.com/hc/articles/360018987893
+- Patch 26.23 em 18/11/2026 e patch 26.24 em 09/12/2026 (conferido em 20/11/2026): esports.gg, https://esports.gg/news/league-of-legends/2026-lol-patch-schedule/ e esports.net, https://www.esports.net/news/lol/lol-patch-schedule/ (a página oficial da wiki não abriu; 26.23 saiu na data prevista)
